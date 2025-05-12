@@ -2,6 +2,8 @@
 
 A Verilog implementation of a 5-stage pipelined RISC-V processor core with hazard detection and forwarding logic.
 
+supports 22 instructions : ADD,SUB,MUL,DIV,MOD,CMP,AND,OR,NOT,MOV,LSL,LSR,ASR,LD,ST,BEQ,BGT,B,CALL,RET,HALT,NOP
+
 ## Features
 
 - **5-Stage Pipeline Architecture**
