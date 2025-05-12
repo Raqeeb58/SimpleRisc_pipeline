@@ -17,7 +17,6 @@ A Verilog implementation of a 5-stage pipelined RISC-V processor core with hazar
 1. **Fetch Stage**
    - PC Management
    - Instruction Memory Interface
-   - Branch Prediction
 
 2. **Decode Stage**
    - Register File (32 registers)
@@ -32,9 +31,14 @@ A Verilog implementation of a 5-stage pipelined RISC-V processor core with hazar
 4. **Memory Stage**
    - Data Memory Access
    - Load/Store Operations
-   - Memory-Mapped I/O
 
 5. **Writeback Stage**
    - Result Selection (ALU/Memory/PC+4)
    - Register Update
+   - 
+### Hazard Handling
+
+- **Forwarding Unit** detects RAW hazards from:
+  - MEM stage results
+  - WB stage results
 
